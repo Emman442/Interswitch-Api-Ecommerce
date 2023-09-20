@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/shopping.css">
+</head>
+<body>
+    <h1>Change your wardRobes</h1>
+    <div class="central-div">
+        <%for (const product of products){%>
+        <div class="outer">
+            <p class="center-text"><%= product.name %></p>
+            <img src ="<%= product.image %>" alt="">
+            <span class="price">$<%= product.price%></span>
+            <button><a href= "/Payment">Purchase</a></button>
+        </div>
+        <%}%>
+    </div>
+</body>
+</html>
